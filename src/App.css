@@ -1,0 +1,217 @@
+ul {
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #f3f7fa;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+input {
+  display: none;
+}
+
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flights {
+  flex-grow: 1;
+  max-width: 700px;
+  margin: 0;
+}
+
+.flight {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.flight + .flight {
+  margin-top: 30px;
+}
+
+.flight_company {
+  margin-bottom: 10px;
+}
+
+.flight_list {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.flight_btn {
+  text-align: center;
+  background-color: #ff6d00;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.flight_text {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.flight_price {
+  margin-right: 2px;
+}
+
+.flight_time {
+  font-size: 30px;
+}
+
+.flight_transfers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.flight_transfers:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+
+.flight_transfers:before {
+  position: absolute;
+  content: '✈';
+  font-size: 40px;
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  top: 50%;
+  background-color: white;
+  z-index: 2;
+}
+
+
+.filters {
+  background-color: #ffffff;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+}
+
+.filters_sort {
+  padding-left: 10px;
+}
+
+.filters_list {
+  padding: 0;
+}
+
+.filters_label {
+  cursor: pointer;
+  display: block;
+  padding: 5px 10px 5px;
+  transition: background-color 0.2s linear;
+}
+
+.filters_label--disabled {
+  opacity: 0.7;
+}
+
+.filters_price {
+  margin-right: 10px;
+}
+
+.filters_item {
+  position: relative;
+}
+
+.filters_item + .filters_item {
+  margin-top: 5px;
+}
+
+
+.filters_desc {
+  position: relative;
+  padding-left: 25px;
+}
+
+.filters_desc:before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 1px solid #daddde;
+  left: 0;
+  top: 3px;
+  border-radius: 2px;
+}
+
+.filters_desc:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  width: 8px;
+  height: 4px;
+  border-bottom: 3px solid #46a9f5;
+  border-left: 3px solid #46a9f5;
+  transform: rotate(-45deg);
+  border-radius: 1px;
+  opacity: 0;
+}
+
+.filters_radio {
+  display: inline-block;
+}
+
+.filters_input {
+  display: inline-block;
+
+}
+
+.filters_checkbox:checked + .filters_desc:after {
+  opacity: 1;
+}
+
+.filters_checkbox:checked + .filters_desc:before {
+  border: 1px solid #46a9f5;
+}
+
+
+.filters_only {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+
+.active {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+

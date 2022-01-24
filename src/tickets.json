@@ -1,0 +1,95 @@
+{
+  "tickets": [
+    {
+      "airline": "MoscowAirline",
+      "id": 1,
+      "fromCity": "Новосибирск",
+      "fromTime": "10:20",
+      "fromDate": "1.01",
+      "toCity": "Красноярск",
+      "trevelTime": "4:00",
+      "toTime": "14:20",
+      "toDate": "1.10",
+      "transfers": 0,
+      "price": 20000
+    },
+    {
+      "airline": "MoscowAirline",
+      "id": 2,
+      "fromCity": "Чита",
+      "fromTime": "5:20",
+      "fromDate": "5.01",
+      "toCity": "Лондон",
+      "trevelTime": "7:15",
+      "toTime": "12:35",
+      "toDate": "5.01",
+      "transfers": 1,
+      "price": 5000
+    },
+    {
+      "airline": "MoscowAirline",
+      "id": 3,
+      "fromCity": "Горно-Алтайск",
+      "fromTime": "15:50",
+      "fromDate": "10.01",
+      "toCity": "Йошкар-Ола",
+      "trevelTime": "9:30",
+      "toTime": "01:20",
+      "toDate": "11.01",
+      "transfers": 0,
+      "price": 10000
+    },
+    {
+      "airline": "MoscowAirline",
+      "id": 4,
+      "fromCity": "Пенза",
+      "fromTime": "22:00",
+      "fromDate": "12.01",
+      "toCity": "Будапешт",
+      "trevelTime": "6:30",
+      "toTime": "4:35",
+      "toDate": "13.01",
+      "transfers": 0,
+      "price": 14000
+    },
+    {
+      "airline": "TinyAirline",
+      "id": 5,
+      "fromCity": "Варшава",
+      "fromTime": "7:40",
+      "fromDate": "15.01",
+      "toCity": "Омск",
+      "trevelTime": "4:40",
+      "toTime": "12:20",
+      "toDate": "15.01",
+      "transfers": 0,
+      "price": 9000
+    },
+    {
+      "airline": "TinyAirline",
+      "id": 6,
+      "fromCity": "Сочи",
+      "fromTime": "16:55",
+      "fromDate": "15.01",
+      "toCity": "Москва",
+      "trevelTime": "3:00",
+      "toTime": "19:55",
+      "toDate": "15.01",
+      "transfers": 1,
+      "price": 7800
+    },
+    {
+      "airline": "AmericaAirline",
+      "id": 9,
+      "fromCity": "Вашингтон",
+      "fromTime": "20:00",
+      "fromDate": "15.01",
+      "toCity": "Варшава",
+      "trevelTime": "5:00",
+      "toTime": "01:00",
+      "toDate": "16.01",
+      "transfers": 1,
+      "price": 10800
+    }
+  ]
+}
