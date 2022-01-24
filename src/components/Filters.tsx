@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {Airlines, IFilters} from "../types";
 import '../App.css'
+import {log} from "util";
 
 const Filters: FC<IFilters> = ({filters, airlines, setFilters, flights}) => {
 
@@ -53,13 +54,13 @@ const Filters: FC<IFilters> = ({filters, airlines, setFilters, flights}) => {
 
         const airline: Airlines = airlines.filter(el => el.airline === airlineName)[0]
         const airlineTransfers = flights.filter(el => el.airline === airlineName)
-        let transfers: boolean = true
+        let transfers: boolean[] = []
 
         filters.transfers.forEach(el => {
-            transfers = airlineTransfers.some(obj => obj.transfers === el)
+            transfers.push(airlineTransfers.some(obj => obj.transfers === el))
         })
-
-        if (airline.price <= filters.price.max && airline.price >= filters.price.min && transfers) {
+        console.log(airline.price <= filters.price.max && airline.price >= filters.price.min, transfers, airlineName)
+        if (airline.price <= filters.price.max && airline.price >= filters.price.min && (transfers.length === 0|| transfers.some(el => el === true))) {
             if (type === 'label') {
                 return 'filters_label'
             }
